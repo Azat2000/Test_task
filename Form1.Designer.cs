@@ -28,63 +28,62 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.IDTextBox = new System.Windows.Forms.TextBox();
+			this.NameTextBox = new System.Windows.Forms.TextBox();
+			this.BirthDateTextBox = new System.Windows.Forms.TextBox();
+			this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
+			this.AddressTextBox = new System.Windows.Forms.TextBox();
 			this.IDlabel = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.SocialNumberTextBox = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.PrintButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// IDTextBox
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox1.Location = new System.Drawing.Point(12, 52);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(249, 38);
-			this.textBox1.TabIndex = 0;
+			this.IDTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.IDTextBox.Location = new System.Drawing.Point(12, 52);
+			this.IDTextBox.Name = "IDTextBox";
+			this.IDTextBox.Size = new System.Drawing.Size(249, 38);
+			this.IDTextBox.TabIndex = 0;
 			// 
-			// textBox2
+			// NameTextBox
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox2.Location = new System.Drawing.Point(12, 127);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(249, 38);
-			this.textBox2.TabIndex = 1;
+			this.NameTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.NameTextBox.Location = new System.Drawing.Point(12, 127);
+			this.NameTextBox.Name = "NameTextBox";
+			this.NameTextBox.Size = new System.Drawing.Size(249, 38);
+			this.NameTextBox.TabIndex = 1;
 			// 
-			// textBox3
+			// BirthDateTextBox
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox3.Location = new System.Drawing.Point(12, 202);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(249, 38);
-			this.textBox3.TabIndex = 2;
+			this.BirthDateTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.BirthDateTextBox.Location = new System.Drawing.Point(12, 202);
+			this.BirthDateTextBox.Name = "BirthDateTextBox";
+			this.BirthDateTextBox.Size = new System.Drawing.Size(249, 38);
+			this.BirthDateTextBox.TabIndex = 2;
 			// 
-			// textBox4
+			// PhoneNumberTextBox
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox4.Location = new System.Drawing.Point(12, 277);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(249, 38);
-			this.textBox4.TabIndex = 3;
+			this.PhoneNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.PhoneNumberTextBox.Location = new System.Drawing.Point(12, 277);
+			this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
+			this.PhoneNumberTextBox.Size = new System.Drawing.Size(249, 38);
+			this.PhoneNumberTextBox.TabIndex = 3;
 			// 
-			// textBox5
+			// AddressTextBox
 			// 
-			this.textBox5.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox5.Location = new System.Drawing.Point(12, 352);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(249, 38);
-			this.textBox5.TabIndex = 4;
+			this.AddressTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.AddressTextBox.Location = new System.Drawing.Point(12, 352);
+			this.AddressTextBox.Name = "AddressTextBox";
+			this.AddressTextBox.Size = new System.Drawing.Size(249, 38);
+			this.AddressTextBox.TabIndex = 4;
 			// 
 			// IDlabel
 			// 
@@ -132,9 +131,9 @@
 			this.label4.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label4.Location = new System.Drawing.Point(6, 318);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(175, 31);
+			this.label4.Size = new System.Drawing.Size(110, 31);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "PhoneNumber:";
+			this.label4.Text = "Address:";
 			// 
 			// label5
 			// 
@@ -142,64 +141,59 @@
 			this.label5.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label5.Location = new System.Drawing.Point(6, 393);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(105, 31);
+			this.label5.Size = new System.Drawing.Size(171, 31);
 			this.label5.TabIndex = 10;
-			this.label5.Text = "Adrress:";
+			this.label5.Text = "SocialNumber:";
 			// 
-			// textBox6
+			// SocialNumberTextBox
 			// 
-			this.textBox6.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox6.Location = new System.Drawing.Point(12, 427);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(249, 38);
-			this.textBox6.TabIndex = 11;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label6.Location = new System.Drawing.Point(6, 468);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(171, 31);
-			this.label6.TabIndex = 12;
-			this.label6.Text = "SocialNumber:";
-			// 
-			// textBox7
-			// 
-			this.textBox7.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox7.Location = new System.Drawing.Point(12, 502);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(249, 38);
-			this.textBox7.TabIndex = 13;
+			this.SocialNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.SocialNumberTextBox.Location = new System.Drawing.Point(12, 427);
+			this.SocialNumberTextBox.Name = "SocialNumberTextBox";
+			this.SocialNumberTextBox.Size = new System.Drawing.Size(249, 38);
+			this.SocialNumberTextBox.TabIndex = 11;
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(267, 18);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(730, 447);
+			this.dataGridView1.ReadOnly = true;
+			this.dataGridView1.Size = new System.Drawing.Size(664, 447);
 			this.dataGridView1.TabIndex = 14;
+			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+			// 
+			// PrintButton
+			// 
+			this.PrintButton.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.PrintButton.Location = new System.Drawing.Point(12, 493);
+			this.PrintButton.Name = "PrintButton";
+			this.PrintButton.Size = new System.Drawing.Size(151, 52);
+			this.PrintButton.TabIndex = 15;
+			this.PrintButton.Text = "Print";
+			this.PrintButton.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1009, 557);
+			this.ClientSize = new System.Drawing.Size(951, 557);
+			this.Controls.Add(this.PrintButton);
 			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.textBox7);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.textBox6);
+			this.Controls.Add(this.SocialNumberTextBox);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.IDlabel);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.AddressTextBox);
+			this.Controls.Add(this.PhoneNumberTextBox);
+			this.Controls.Add(this.BirthDateTextBox);
+			this.Controls.Add(this.NameTextBox);
+			this.Controls.Add(this.IDTextBox);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -211,21 +205,20 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox IDTextBox;
+		private System.Windows.Forms.TextBox NameTextBox;
+		private System.Windows.Forms.TextBox BirthDateTextBox;
+		private System.Windows.Forms.TextBox PhoneNumberTextBox;
+		private System.Windows.Forms.TextBox AddressTextBox;
 		private System.Windows.Forms.Label IDlabel;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox SocialNumberTextBox;
 		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.Button PrintButton;
 	}
 }
 

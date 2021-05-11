@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Задание
 {
@@ -19,7 +20,29 @@ namespace Задание
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			GetClients();
+		}
+		private void GetClients()
+		{
+			SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-16HQO5L\MSSQLSERVER01;Initial Catalog=KeremetBank;Integrated Security=True");
+			SqlCommand cmd = new SqlCommand("select*from Clients", con);
+			DataTable dt = new DataTable();
+			con.Open();
+			SqlDataReader sdr = cmd.ExecuteReader();
+			dt.Load(sdr);
+			con.Close();
+			dataGridView1.DataSource = dt;
+		}
 
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			dataGridView1.CurrentRow.Selected = true;
+			IDTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+			NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["Name"].Value.ToString();
+			BirthDateTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["BirthDate"].Value.ToString();
+			PhoneNumberTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["PhoneNumber"].Value.ToString();
+			AddressTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["Address"].Value.ToString();
+			SocialNumberTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells["SocialNumber"].Value.ToString();
 		}
 	}
 }
