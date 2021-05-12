@@ -30,7 +30,6 @@
 		{
 			this.IDTextBox = new System.Windows.Forms.TextBox();
 			this.NameTextBox = new System.Windows.Forms.TextBox();
-			this.BirthDateTextBox = new System.Windows.Forms.TextBox();
 			this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
 			this.AddressTextBox = new System.Windows.Forms.TextBox();
 			this.IDlabel = new System.Windows.Forms.Label();
@@ -42,11 +41,13 @@
 			this.SocialNumberTextBox = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.PrintButton = new System.Windows.Forms.Button();
+			this.BirthDatedateTimePicker = new System.Windows.Forms.DateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// IDTextBox
 			// 
+			this.IDTextBox.Enabled = false;
 			this.IDTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.IDTextBox.Location = new System.Drawing.Point(12, 52);
 			this.IDTextBox.Name = "IDTextBox";
@@ -55,22 +56,16 @@
 			// 
 			// NameTextBox
 			// 
+			this.NameTextBox.Enabled = false;
 			this.NameTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.NameTextBox.Location = new System.Drawing.Point(12, 127);
 			this.NameTextBox.Name = "NameTextBox";
 			this.NameTextBox.Size = new System.Drawing.Size(249, 38);
 			this.NameTextBox.TabIndex = 1;
 			// 
-			// BirthDateTextBox
-			// 
-			this.BirthDateTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.BirthDateTextBox.Location = new System.Drawing.Point(12, 202);
-			this.BirthDateTextBox.Name = "BirthDateTextBox";
-			this.BirthDateTextBox.Size = new System.Drawing.Size(249, 38);
-			this.BirthDateTextBox.TabIndex = 2;
-			// 
 			// PhoneNumberTextBox
 			// 
+			this.PhoneNumberTextBox.Enabled = false;
 			this.PhoneNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.PhoneNumberTextBox.Location = new System.Drawing.Point(12, 277);
 			this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
@@ -79,6 +74,7 @@
 			// 
 			// AddressTextBox
 			// 
+			this.AddressTextBox.Enabled = false;
 			this.AddressTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.AddressTextBox.Location = new System.Drawing.Point(12, 352);
 			this.AddressTextBox.Name = "AddressTextBox";
@@ -109,7 +105,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label2.Location = new System.Drawing.Point(6, 168);
+			this.label2.Location = new System.Drawing.Point(6, 186);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(120, 31);
 			this.label2.TabIndex = 7;
@@ -147,6 +143,7 @@
 			// 
 			// SocialNumberTextBox
 			// 
+			this.SocialNumberTextBox.Enabled = false;
 			this.SocialNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.SocialNumberTextBox.Location = new System.Drawing.Point(12, 427);
 			this.SocialNumberTextBox.Name = "SocialNumberTextBox";
@@ -157,6 +154,7 @@
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
 			this.dataGridView1.AllowUserToDeleteRows = false;
+			this.dataGridView1.AllowUserToOrderColumns = true;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(267, 18);
 			this.dataGridView1.Name = "dataGridView1";
@@ -174,12 +172,23 @@
 			this.PrintButton.TabIndex = 15;
 			this.PrintButton.Text = "Print";
 			this.PrintButton.UseVisualStyleBackColor = true;
+			this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
+			// 
+			// BirthDatedateTimePicker
+			// 
+			this.BirthDatedateTimePicker.CalendarFont = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.BirthDatedateTimePicker.Enabled = false;
+			this.BirthDatedateTimePicker.Location = new System.Drawing.Point(12, 220);
+			this.BirthDatedateTimePicker.Name = "BirthDatedateTimePicker";
+			this.BirthDatedateTimePicker.Size = new System.Drawing.Size(249, 20);
+			this.BirthDatedateTimePicker.TabIndex = 16;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(951, 557);
+			this.Controls.Add(this.BirthDatedateTimePicker);
 			this.Controls.Add(this.PrintButton);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.SocialNumberTextBox);
@@ -191,7 +200,6 @@
 			this.Controls.Add(this.IDlabel);
 			this.Controls.Add(this.AddressTextBox);
 			this.Controls.Add(this.PhoneNumberTextBox);
-			this.Controls.Add(this.BirthDateTextBox);
 			this.Controls.Add(this.NameTextBox);
 			this.Controls.Add(this.IDTextBox);
 			this.Name = "Form1";
@@ -207,7 +215,6 @@
 
 		private System.Windows.Forms.TextBox IDTextBox;
 		private System.Windows.Forms.TextBox NameTextBox;
-		private System.Windows.Forms.TextBox BirthDateTextBox;
 		private System.Windows.Forms.TextBox PhoneNumberTextBox;
 		private System.Windows.Forms.TextBox AddressTextBox;
 		private System.Windows.Forms.Label IDlabel;
@@ -219,6 +226,7 @@
 		private System.Windows.Forms.TextBox SocialNumberTextBox;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button PrintButton;
+		private System.Windows.Forms.DateTimePicker BirthDatedateTimePicker;
 	}
 }
 
