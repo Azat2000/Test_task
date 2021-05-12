@@ -170,7 +170,7 @@
 			this.PrintButton.Name = "PrintButton";
 			this.PrintButton.Size = new System.Drawing.Size(151, 52);
 			this.PrintButton.TabIndex = 15;
-			this.PrintButton.Text = "Print";
+			this.PrintButton.Text = "Export";
 			this.PrintButton.UseVisualStyleBackColor = true;
 			this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
 			// 

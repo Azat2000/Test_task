@@ -49,25 +49,32 @@ namespace Задание
 
 		private void PrintButton_Click(object sender, EventArgs e)
 		{
-			
-			// Load Excel workbook
-			Workbook workbook = new Workbook("C:\\Users\\Azat\\source\\repos\\Задание\\Template\\example.xlsx");
-			ReplaceOptions replace = new ReplaceOptions();
-			// Set case sensitivity and text matching options
-			replace.CaseSensitive = false;
-			replace.MatchEntireCellContents = false;
-			// Replace text
-			workbook.Replace("[Date]", DateTime.Now.ToString() , replace);
-			workbook.Replace("[ID]",IDTextBox.Text , replace);
-			workbook.Replace("[Name]", NameTextBox.Text, replace);
-			workbook.Replace("[BirthDate]", BirthDatedateTimePicker.Text, replace);
-			workbook.Replace("[PhoneNumber]", PhoneNumberTextBox.Text, replace);
-			workbook.Replace("[Address]", AddressTextBox.Text, replace);
-			workbook.Replace("[SocialNumber]", SocialNumberTextBox.Text, replace);
-			// Save updated Excel workbook
-			string filename = DateTime.Now.ToString("dd.MM.yyyy-HH.mm");
-			workbook.Save("C:\\Users\\Azat\\source\\repos\\Задание\\Result\\"+filename+".xlsx");
-			MessageBox.Show("Export to Excel is successful");
+			if (IDTextBox.Text == "")
+			{
+				MessageBox.Show("Select client");
+
+			}
+			else
+			{
+				// Load Excel workbook
+				Workbook workbook = new Workbook("C:\\Users\\Azat\\source\\repos\\Задание\\Template\\example.xlsx");
+				ReplaceOptions replace = new ReplaceOptions();
+				// Set case sensitivity and text matching options
+				replace.CaseSensitive = false;
+				replace.MatchEntireCellContents = false;
+				// Replace text
+				workbook.Replace("[Date]", DateTime.Now.ToString(), replace);
+				workbook.Replace("[ID]", IDTextBox.Text, replace);
+				workbook.Replace("[Name]", NameTextBox.Text, replace);
+				workbook.Replace("[BirthDate]", BirthDatedateTimePicker.Text, replace);
+				workbook.Replace("[PhoneNumber]", PhoneNumberTextBox.Text, replace);
+				workbook.Replace("[Address]", AddressTextBox.Text, replace);
+				workbook.Replace("[SocialNumber]", SocialNumberTextBox.Text, replace);
+				// Save updated Excel workbook (file name=date)
+				string filename = DateTime.Now.ToString("dd.MM.yyyy-HH.mm");
+				workbook.Save("C:\\Users\\Azat\\source\\repos\\Задание\\Result\\" + filename + ".xlsx");
+				MessageBox.Show("Export to Excel is successful");
+			}
 		}
 	}
 }
