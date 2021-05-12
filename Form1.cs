@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-//using Excel = Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 using Aspose.Cells;
+using System.Threading;
+
 
 namespace Задание
 {
@@ -56,7 +58,8 @@ namespace Задание
 			}
 			else
 			{
-				// Load Excel workbook
+				
+								  // Load Excel workbook
 				Workbook workbook = new Workbook("C:\\Users\\Azat\\source\\repos\\Задание\\Template\\example.xlsx");
 				ReplaceOptions replace = new ReplaceOptions();
 				// Set case sensitivity and text matching options
@@ -72,7 +75,10 @@ namespace Задание
 				workbook.Replace("[SocialNumber]", SocialNumberTextBox.Text, replace);
 				// Save updated Excel workbook (file name=date)
 				string filename = DateTime.Now.ToString("dd.MM.yyyy-HH.mm");
-				workbook.Save("C:\\Users\\Azat\\source\\repos\\Задание\\Result\\" + filename + ".xlsx");
+				workbook.Save("C:\\Users\\Azat\\source\\repos\\Задание\\Result\\" + filename + ".xlsx") ;
+
+
+
 				MessageBox.Show("Export to Excel is successful");
 			}
 		}
